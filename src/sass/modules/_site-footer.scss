@@ -1,0 +1,52 @@
+.site-footer {
+
+    position: relative;
+     position: absolute;
+    width: 100%;
+    height: 190px;
+    // z-index: 2;s
+    // background: rgba(#3c3f47,0.4);
+    background-color:rgba(#3c3e47,0.8);
+;
+
+
+    &__block {
+        display: inline-block;
+        padding-top: 30px;
+        vertical-align: top;
+    }
+    &__menu {
+        
+    }
+    &__motto {
+        color:#a9aaad;
+        font-size: 1rem;
+        padding:0px 30px;
+        margin: 0;
+        vertical-align: top;
+    }
+    &__menu {
+        padding:0 80px;
+    }
+    &__social {
+        padding: 0 80px;
+        position: relative;
+    }
+    &__underfooter {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+       background: rgba(#2b57a4,0.9);
+       padding:15px 0;
+
+    }
+    &__underfootermotto {
+    
+        color:white;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight:100; 
+
+    }
+}

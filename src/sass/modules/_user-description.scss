@@ -1,0 +1,24 @@
+.user-description {
+    // position: absolute;
+    // top:0;
+    // right: 0;
+    margin-left: 50%;
+    
+
+
+    &__avatar {
+        height: 450px;
+        // max-width: 450px;
+    }
+    img {
+
+        height: 100%;
+        width: 100%;
+    }
+    &__text  {
+
+        color:#474b57;
+        font-family: 'Roboto',sans-serif;
+        padding-top: 130px;
+    }
+}

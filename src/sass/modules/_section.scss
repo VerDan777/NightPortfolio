@@ -1,0 +1,18 @@
+.section {
+
+    position: relative;
+
+    width: 100%;
+    &--welcome {
+        
+        height: 100%;
+
+    }
+    &--works {
+        height: 440px;
+    }
+    &--blog {
+        height: 100%;
+    }
+
+}

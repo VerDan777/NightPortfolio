@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/styles.css")
+    title Document
+body
+     header.section.site-header
+
+            .site-header__socials
+                        ul.socials
+                            li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                            li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                            li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+
+
+            .main-menu.site-header__menu: img(src="./img/hamburger.svg")
+
+            .user.user--works
+                .user__icon
+                        img.user__avatar(src="./img/avatar.jpg")
+                h2.user__title Даниил Верещагин
+                p.user__suptitle Личный сайт веб разработчика
+            
+            .arrow.site-header__scroll
+                .arrow-down-pic
+                    img(src="./img/arrow_down.svg")
+
+     section.section.section--works.about--none
+            .block__title Мои работы
+            .triangle.triangle--black.triangle-left.triangle--works
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
+                        polygon(points="0,0 0,150 1000,150")
+            .triangle.triangle--black.triangle-right.triangle--works
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none" )
+                        polygon(points="1000,0 1000,150 0,150")   
+
+            .school
+                section.school__site
+                    article.school__site__info
+                        h1.school__site__title Сайт школы онлайн <br> образования 
+                        h3.school__site__subtitle HTML, CSS, JAVASCRIPT
+                        a(href="http://loftschool.com" target="_blank"): button(type="button").button Посмотреть все работы
+                section.school__preview
+
+                    article.school__preview-art
+                        img.school__preview-art__img(src="./img/spritephoto.png")
+                    .school__preview-case
+                        .school__preview-case--left
+                            img(src="./img/mockup.png")
+                        .school__preview-case--right
+                            //- img(src="./img/itloft.png")
+     section.section.form
+
+     footer.site-footer
+                .site-footer__block
+                    h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
+                .site-footer__block
+                    nav.site-footer__menu
+                
+                        ul.main-menu
+                            -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
+                            -var menuLinks = ['works.html','about.html','blog.html', 'welcome.html'];
+                            -for (var i=0;i<4;i++)
+                                li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+                    .site-footer__social 
+                            ul.socials.socials--footer
+                            li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
+                            li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
+                            li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
+                .site-footer__block
+                    .site-footer__contacts
+                        ul.contacts__list.contacts__list--footer
+                            li.contacts__item.contacts__item--block deadspace290
+                            li.contacts__item.contacts__item--block vereshhagin98@mail.ru 
+                            li.contacts__item.contacts__item--block +7(952)-796-11-99
+                            li.contacts__item.contacts__item--block г. Калининград 
+                .site-footer__underfooter
+                    h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
+
+                    
+                
+
+                                
+            
+                    

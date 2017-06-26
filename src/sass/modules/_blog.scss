@@ -1,0 +1,31 @@
+.blog {
+
+    // padding-bottom: 60px;
+
+&__container {
+    margin: 0 auto;
+    padding-left:120px;
+    // margin-bottom: 100px;
+    width: 780px;
+
+}
+&__title {
+
+    color:#474b57;
+    font-size: 2rem;
+    font-family: 'SansusWebsimmo',sans-serif;
+    padding-bottom: 40px;
+
+}
+&__date {
+    color:#9fa8c5;
+    padding-bottom: 30px;
+
+}
+
+&__text {
+    font-family: 'Roboto',sans-serif;
+}
+
+
+}

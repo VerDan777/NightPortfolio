@@ -1,0 +1,56 @@
+.main-menu {
+    // position: relative;
+    // font-size:0; 
+    &__menu {
+        position: absolute;
+        top:30px;
+        right:30px;
+
+        &--welcome {
+            position: absolute;
+            bottom: 0;
+            // top:100%;
+            text-align: center;
+            right:0;
+            display: inline-block;  
+            margin:20px 0;
+            width: 100%;
+
+        cursor: pointer;
+        }
+    }
+    &__link {
+       &--welcome {
+       text-decoration: none;
+        text-align: center;
+        color:white;
+       }
+    }
+        &__item {
+
+        display: inline-block;
+        margin-left:-4px; 
+        padding-right: 30px;
+        padding-bottom: 30px;
+
+        &--welcome {
+
+            background: #0548bd;
+            border-right:1px solid white; 
+            padding:20px 30px;
+
+            &:hover,focus,active {
+                background: #083c96;
+
+            }
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color:white;
+        font-weight: 100;
+        font-family: 'Roboto',sans-serif;
+    }
+}

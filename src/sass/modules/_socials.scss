@@ -1,0 +1,41 @@
+.socials {
+
+    padding-top:30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    
+
+    &--footer {
+        padding:0;
+    }
+    &--welcome {
+        display: inline-block;
+        text-align:center;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+
+    }
+    
+    svg {
+    
+    width: 30px;
+    height: 30px;
+    fill:white;
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover {
+        fill:#0548be;
+        transition: 0.5s ease-in-out;
+    }
+    
+    }
+
+
+}

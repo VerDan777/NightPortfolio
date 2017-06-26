@@ -1,0 +1,44 @@
+.contacts {
+
+    background: rgba(#fbfbfb,0.8);
+    width: 500px;
+    height: 285px;
+    margin: 0 auto;
+    // z-index: -1;
+
+    
+
+    &__list {
+
+        font-family: 'Roboto',sans-serif;
+        color:red;
+        list-style-image: url('./img/vk.svg');
+     
+
+        &--footer {
+            color:#d7d7d8;
+        }
+    }
+    &__item {
+        color:#686e7b;
+        display: inline-block;
+
+        &::before {
+            content:''; 
+            display:inline-block; 
+            height:1em; 
+            width:1em; 
+            background-image:url('./img/vk.svg'); 
+            background-size:contain; 
+            background-repeat:no-repeat; 
+            padding-left: 2em; 
+        }
+    
+
+
+        &--block {
+            display: block;
+            color:white;
+        }
+    }
+}
