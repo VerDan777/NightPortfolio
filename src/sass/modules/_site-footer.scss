@@ -7,7 +7,12 @@
     // z-index: 2;s
     // background: rgba(#3c3f47,0.4);
     background-color:rgba(#3c3e47,0.8);
-;
+
+    &--welcome {
+        background: none;
+        height: auto;
+
+    }
 
 
     &__block {
@@ -39,6 +44,9 @@
        background: rgba(#2b57a4,0.9);
        padding:15px 0;
 
+    &--welcome {
+        background: none;
+    }
     }
     &__underfootermotto {
     
@@ -47,6 +55,8 @@
         text-align: center;
         font-size: 1rem;
         font-weight:100; 
+
+        
 
     }
 }

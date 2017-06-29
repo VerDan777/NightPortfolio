@@ -13,12 +13,21 @@
     &--auth {
         background: none;
         position: absolute;
-        top:22px;
-        right:100px;
+        left:50%;
+        top:5%;
+        margin: 0 auto;
+        transform: translateX(-50%);
         padding:  15px 40px;
         border:1px solid white;
         transition: 0.5s ease-in-out;
         
+        @include atTabletsPortrait {
+            position: absolute;
+            top:22px;
+            right: 0px;
+            transform: none;
+            width: 200px;
+        }
         &:hover {
             background-color: #004cd1;
         }

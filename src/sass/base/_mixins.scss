@@ -1,22 +1,22 @@
 @mixin atSmall{
-    @media and screen(max-width:768px) {
+    @media (max-width:768px) {
         @content;
     }
 }
 @mixin atTabletsPortrait {
-    @media and screen(min-width:768px) {
+    @media (min-width:768px) {
         @content;
     }
  }
  @mixin atTabletsLandscape {
-     @media and screen(min-width:900px) {
+     @media (min-width:900px) {
          @content;
      }
  }
  
  @mixin atDesktop {
 
-     @media and screen(min-width:1200px) {
+     @media (min-width:1200px) {
          @content;
      }
  }
