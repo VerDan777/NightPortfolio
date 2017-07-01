@@ -17,7 +17,16 @@ body
                             li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
 
 
-            .main-menu.site-header__menu: img(src="./img/hamburger.svg")
+           
+            .hamburger__menu-icon: .hamburger__menu-icon__middle
+
+            .main-menu
+                .main-menu__list
+                    -var menuItems = [' Главная', 'Обо мне ', 'Мои работы','Блог']
+                    -var menuLinks = ['index','about', 'works.', 'blog']
+                    -for (var i = 0;i<4;i++)
+                        -var  link = "#" + menuLinks[i];
+                        li: a(href=link)= menuItems[i]
 
             .user.user--about
                 .user__icon
@@ -37,7 +46,7 @@ body
                 .block__title.block__title--weight Обо мне
                 .user-description 
                     .user-description-content
-                        img(src="./img/i.jpg").user-description__avatar
+                        img(src="./img/avatar.jpg").user-description__avatar
                     .user-description__title
                         .block__title.block__title--pd50.block__title--line Кто я  
                     .user-description__text 
@@ -77,45 +86,50 @@ body
                 .block__suptitle Контакты
             ul.contacts__list
                 li.contacts__item skype__kdn
-                li.contacts__item  +7(952)-796-11-99
+                    img(src="./img/skype.svg")
+                li.contacts__item  +7(952)-796-11-99 
+                    img(src="./img/skype.svg")
+                br
                 li.contacts__item astakhov@gmail.com
+                    img(src="./img/skype.svg")
                 li.contacts__item г.Калининград
+                    img(src="./img/skype.svg")
                 
     
-    //- footer.site-footer
-    //-     .site-footer__block
-    //-         h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
+       footer.site-footer
+                .site-footer__block
+                    h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
 
-    //-     .site-footer__block
-    //-         nav.site-footer__menu
-         
-    //-             ul.main-menu
-    //-                -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-    //-                -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
-    //-                -for (var i=0;i<4;i++)
-    //-                     li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+                .site-footer__block
+                    nav.site-footer__menu
+                
+                        ul.main-menu--footer
+                        -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
+                        -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
+                        -for (var i=0;i<4;i++)
+                                li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
 
-    //-         .site-footer__social 
-    //-              ul.socials.socials--footer
-    //-                 li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
-    //-                 li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
-    //-                 li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
-    //-     .site-footer__block
-    //-         .site-footer__contacts
-    //-             ul.contacts__list.contacts__list--footer
-    //-                 li.contacts__item.contacts__item--block deadspace290
-    //-                 li.contacts__item.contacts__item--block vereshhagin98@mail.ru
-    //-                 li.contacts__item.contacts__item--block +7(952)-796-11-99
-    //-                 li.contacts__item.contacts__item--block г. Калининград 
+                    .site-footer__social 
+                        ul.socials.socials--footer
+                            li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                            li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                            li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+                .site-footer__block
+                    .site-footer__contacts
+                        ul.contacts__list.contacts__list--footer
+                            li.contacts__item--footer.contacts__item--block deadspace290
+                            li.contacts__item--footer.contacts__item--block vereshhagin98@mail.ru
+                            li.contacts__item--footer.contacts__item--block +7(952)-796-11-99
+                            li.contacts__item--footer.contacts__item--block г. Калининград 
 
-    //-     .site-footer__underfooter
-    //-         h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
+                .site-footer__underfooter
+                    h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
 
     script(src="./js/app.js")
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOUtmJI5ftVmlszVrGDtNiqFes2Jpi_uI&callback=initMap")
 
 
-             
+                
                     
                         
                                     

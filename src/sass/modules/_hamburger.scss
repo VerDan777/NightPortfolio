@@ -1,3 +1,105 @@
 .hamburger {
-    background-image: url('/img/hamburger.svg');
-}
+
+    &__menu-icon {
+
+      position: absolute;
+        right: 25px;
+        top: 35px;
+        z-index: 2;
+
+        // box model
+        height: 24px;
+        width: 24px;
+        // border: 1px solid red;
+
+        // visual
+        cursor: pointer;
+
+        // @include atTabletsLandscape {
+        //     // box model
+        //     display: none;
+        // }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: 0 50%;
+
+            // box model
+            display: block;
+            height: 4px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+        }
+    }
+
+    &__menu-icon__middle { 
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 10px;
+
+            // box model
+            display: block;
+            height: 4px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+        
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: 0 50%;
+
+            // box model
+            display: block;
+            height: 4px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+            // border-radius: 4px;
+        }
+    }   
+         &--close-x {
+            &::before {
+                // positioning
+                transform: rotate(45deg) scaleX(1.178);
+
+                // visual
+                background-color: white;
+            }
+
+            .hamburger__menu-icon__middle {
+                // positioning
+                transform: scaleX(0);
+
+                // visual
+                opacity: 0;
+            }
+
+            &::after {
+                // positioning
+                transform: rotate(-45deg) scaleX(1.178);
+
+                // visual
+                background-color: white;
+            }
+        } 
+    }
+  

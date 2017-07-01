@@ -1,6 +1,27 @@
 .main-menu {
     // position: relative;
-    // font-size:0; 
+    // font-size:0;
+       // positioning
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    // box model
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+    background-color: rgba(blue, 0.95);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+
+    &--shown {
+        // visual
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    } 
+    
     &__menu {
         position: absolute;
         top:30px;
