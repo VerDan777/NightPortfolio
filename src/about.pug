@@ -23,13 +23,12 @@ body
             .main-menu
                 .main-menu__list
                     -var menuItems = [' Главная', 'Обо мне ', 'Мои работы','Блог']
-                    -var menuLinks = ['index','about', 'works.', 'blog']
+                    -var menuLinks = ['index.html','about.html', 'works.html', 'blog.html']
                     -for (var i = 0;i<4;i++)
-                        -var  link = "#" + menuLinks[i];
-                        li: a(href=link)= menuItems[i]
+                        li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
 
             .user.user--about
-                .user__icon
+                .user__icongit
                         img.user__avatar(src="./img/avatar.jpg")
                 h2.user__title Даниил Верещагин
                 p.user__suptitle Личный сайт веб разработчика

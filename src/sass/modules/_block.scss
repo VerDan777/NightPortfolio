@@ -9,38 +9,19 @@
         font-family: 'SansusWebsimmo', sans-serif;
         position: absolute; 
          z-index: 2;
-         
-        &--line {
-            &-use {
-                &::before {
+
+                    &::after {
             content: '';
-            position: absolute;
-            left:65%;
-            transform: translate(-50%,-50%);
-            top:100px;
-            border:1px solid #9c9d9f;
-            border-right:none;
-            border-left: none;
-            border-top:none;
-            width: 80px;
-            height: 15px;
+            height:3px;
+            display: block;
+            width: 85px;
+            background: #878784;
+            margin: 0 auto;
+
 
             }
-            }
 
-        &::before {
-            content: '';
-            position: absolute;
-            left:65%;
-            transform: translate(-50%,-50%);
-            bottom: -20px;
-            border:1px solid #9c9d9f;
-            border-right:none;
-            border-left: none;
-            border-top:none;
-            width: 80px;
-            height: 15px;
-        }
+
         }
         &--pd50 {
             padding-top: 50px;
@@ -84,4 +65,3 @@
             font-family: 'SansusWebsimmo', sans-serif;
         }
     }
-}
