@@ -9,6 +9,16 @@
     cursor: pointer;
     text-decoration: none;
 
+    &--transparent {
+
+        width: 50%;
+        background:rgba(#231e24,0.5);
+        margin: -4px;
+    }
+    &--form {
+        width: 50%;
+    }
+
 
     &--auth {
         background: none;
