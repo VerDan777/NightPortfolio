@@ -17,7 +17,14 @@ body
                             li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
 
 
-            .main-menu.site-header__menu: img(src="./img/hamburger.svg")
+            .hamburger__menu-icon: .hamburger__menu-icon__middle
+
+            .main-menu
+                .main-menu__list
+                    -var menuItems = [' Главная', 'Обо мне ', 'Мои работы','Блог']
+                    -var menuLinks = ['index.html','about.html', 'works.html', 'blog.html']
+                    -for (var i = 0;i<4;i++)
+                        li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
 
             .user.user--works
                 .user__icon
@@ -104,3 +111,5 @@ body
 
             .site-footer__underfooter
                 h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
+
+script(src="./js/app.js")
