@@ -1,15 +1,21 @@
 .contacts {
 
     background: rgba(#fbfbfb,0.8);
-    width: 500px;
-    height: 285px;
+    // width: 500px;
+    // height: 285px;
     margin: 0 auto;
-    z-index: 2;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
     display: block;
+
+    @include atTabletsPortrait {
+
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 285px;
+        
+    }
 
     &__title {
         padding-top:25px;

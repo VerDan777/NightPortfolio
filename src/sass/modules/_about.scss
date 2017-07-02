@@ -1,7 +1,10 @@
 .about {
     position: relative;
-    height: 900px; // width: 100%;
-    background-color: beige;
+    background-color: beige;;
+
+    @include atTabletsPortrait {
+        height: 100%;
+    }
     
     &--white {
         background: #faf8f0;
@@ -32,24 +35,35 @@
     }
     &-left {
         position: relative;
-        width: 50%;
-        float: left;
+        padding: 30px 0;
+
+        @include atTabletsPortrait {
+            width: 50%;
+            float:left;
+        }
     }
     &-right {
         position: relative;
-        position: absolute;
-        right: 0;
+        background: #f4f5f0;
+
+        @include atTabletsPortrait {
         width: 50%;
         float: left;
+        }
+
         &__wrapper {
-            padding: 0 20px;
+            padding: 20px 20px;
         }
         &__description {
+            font-family: 'Roboto', sans-serif;
+            color: #7f8084;
+
+            @include atTabletsPortrait {
             margin-left: 40px;
             margin-right: 100px;
             padding-top:130px;
-            font-family: 'Roboto', sans-serif;
-            color: #7f8084;
+
+            }
         }
         &-content {
             margin: 0 50px;

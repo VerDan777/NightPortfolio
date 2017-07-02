@@ -1,12 +1,17 @@
 .site-footer {
     
-    position: absolute;
+
     width: 100%;
-    height: 190px;
+    height: 100%;
+    position: absolute;
+    right: 0;
     bottom: 0;
-    // z-index: 2;s
-    // background: rgba(#3c3f47,0.4);
+    left: 0;
     background-color:rgba(#3c3e47,0.8);
+
+    @include atTabletsPortrait {
+        height: 190px;
+    }
 
     &--welcome {
         background: none;
@@ -17,32 +22,54 @@
 
     &__block {
         display: inline-block;
-        padding-top: 30px;
         vertical-align: top;
-    }
-    &__menu {
-        
+
+         &::after {
+
+            content: '';
+            height:1px;
+            display: block;
+            width: 100%;
+            background: #878784;
+            margin: 0 auto;
+         }
     }
     &__motto {
-        color:#a9aaad;
+        color:#aaaaad;
         font-size: 1rem;
         padding:0px 30px;
         margin: 0;
         vertical-align: top;
+        text-align: center;
     }
     &__menu {
-        padding:0 80px;
+        // padding:0 80px;
+        
+        @include atTabletsPortrait {
+            padding: 0 80px;
+        }
     }
     &__social {
-        padding: 0 80px;
+       
         position: relative;
+        // padding:0 20px;
+        text-align: center;
+
+        @include atTabletsPortrait {
+            padding: 0 80px;
+        }
+    }
+    &__contacts {
+
+      text-align: center;
+      
     }
     &__underfooter {
         position: absolute;
         bottom: 0;
         width: 100%;
-       background: rgba(#2b57a4,0.9);
-       padding:15px 0;
+        background: rgba(#2b57a4,0.9);
+    //    padding:15px 0;
 
     &--welcome {
         background: none;
@@ -55,8 +82,6 @@
         text-align: center;
         font-size: 1rem;
         font-weight:100; 
-
-        
-
     }
 }
+

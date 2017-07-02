@@ -2,33 +2,53 @@
     position: relative;
     &__title {
         color: #474b57;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.52;
         text-transform: uppercase;
         text-align: center;
         position: relative;
         font-family: 'SansusWebsimmo', sans-serif;
-        position: absolute; 
          z-index: 2;
+         margin: 40px 0;
 
-                    &::after {
+         @include atTabletsPortrait {
+             position: absolute;
+             margin:0 0;
+             font-size: 2rem;
+
+         }
+
+            &::after {
+
             content: '';
             height:3px;
             display: block;
             width: 85px;
             background: #878784;
-            margin: 0 auto;
+            margin: 10px auto;
+           
 
+            @include atTabletsPortrait {
+                width: 85px;
+                margin: 0 auto;
+                background: #878784; 
+            }
 
             }
 
 
         }
-        &--pd50 {
-            padding-top: 50px;
+        &__title--pd50 {
+
             text-align: center;
-            padding-left: 120px;
-            padding-right: 50px;
             color:#474b57;
+            font-weight: 300;
+            font-size: 1.5rem;
+
+            @include atTabletsPortrait {
+                
+            }
         }
 
         &--about {
@@ -41,7 +61,6 @@
             font-size: 2rem;
             text-transform: uppercase;
             color: #474b57;
-            padding: 0 80px;
             display: inline-block;
         }
         &--right {
@@ -58,10 +77,29 @@
         }
         &__suptitle {
             color: #474b57;
-            font-size: 0.5rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             text-align: center;
             padding: 50px 0;
             font-family: 'SansusWebsimmo', sans-serif;
+
+        
+            &::after {
+
+            content: '';
+            height:3px;
+            display: block;
+            width: 85px;
+            background: #878784;
+            margin: 10px auto;
+           
+
+            @include atTabletsPortrait {
+                width: 85px;
+                margin: 0 auto;
+                background: #878784; 
+            }
+
+            }
         }
     }
