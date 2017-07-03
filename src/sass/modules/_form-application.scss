@@ -2,8 +2,12 @@
 
      background:rgba(#231e24,0.5);
      display: block;
-     width: 380px;
+    //  width: 380px;
      margin:  0 auto;
+
+     @include atTabletsPortrait {
+         width: 380px;
+     }
 
      &-container {
 

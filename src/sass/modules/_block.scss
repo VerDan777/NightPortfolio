@@ -10,7 +10,7 @@
         position: relative;
         font-family: 'SansusWebsimmo', sans-serif;
          z-index: 2;
-         margin: 40px 0;
+         padding: 40px 0;
 
          @include atTabletsPortrait {
              position: absolute;
@@ -33,8 +33,35 @@
                 width: 85px;
                 margin: 0 auto;
                 background: #878784; 
+                padding: 0 0;
             }
 
+            }
+
+            &--works {
+                color:white;
+                font-size: 2rem;
+                font-family: 'SansusWebissimo',sans-serif;
+                position: absolute;
+                top:-50px;
+                left:50%;
+                transform: translate(-50%,-50%);
+                margin: 0 0;
+                width: 100%;
+            }
+            &--weight {
+                font-family: 'SansusWebissimo',sans-serif;
+                color:white;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center; 
+                padding: 40px 10px;
+                display: inline-block;
+                
+                @include atTabletsPortrait {
+                    margin: 0 auto;
+                }
             }
 
 

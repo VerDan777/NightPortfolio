@@ -1,6 +1,6 @@
 .about {
     position: relative;
-    background-color: beige;;
+    background-color: beige;
 
     @include atTabletsPortrait {
         height: 100%;
@@ -49,6 +49,7 @@
         @include atTabletsPortrait {
         width: 50%;
         float: left;
+        background-color: beige;
         }
 
         &__wrapper {

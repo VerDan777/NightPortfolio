@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color:rgba(#3c3e47,0.8);
+    background-color:rgba(#3c3e47,0.5);
 
     @include atTabletsPortrait {
         height: 190px;
@@ -18,10 +18,14 @@
         height: auto;
 
     }
+    &--works {
+        height:190px;
+    }
 
 
     &__block {
-        display: inline-block;
+        // display: inline-block;
+        padding:10px 0;
         vertical-align: top;
 
          &::after {
@@ -33,6 +37,9 @@
             background: #878784;
             margin: 0 auto;
          }
+        //  &--footer {
+        //      display: block;
+        //  }
     }
     &__motto {
         color:#aaaaad;
@@ -41,14 +48,16 @@
         margin: 0;
         vertical-align: top;
         text-align: center;
+        padding:10px 0;
     }
     &__menu {
-        // padding:0 80px;
+       
         
         @include atTabletsPortrait {
             padding: 0 80px;
         }
     }
+ 
     &__social {
        
         position: relative;
@@ -62,14 +71,14 @@
     &__contacts {
 
       text-align: center;
-      
+
     }
     &__underfooter {
         position: absolute;
         bottom: 0;
         width: 100%;
         background: rgba(#2b57a4,0.9);
-    //    padding:15px 0;
+       padding:15px 0;
 
     &--welcome {
         background: none;

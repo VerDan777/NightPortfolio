@@ -21,7 +21,7 @@ body
 
             .main-menu
                 .main-menu__list
-                    -var menuItems = [' Главная', '> ', 'Мои работы','Блог']
+                    -var menuItems = [' Главная',  'Обо мне', 'Мои работы','Блог']
                     -var menuLinks = ['index.html','about.html', 'works.html', 'blog.html']
                     -for (var i = 0;i<4;i++)
                         li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
@@ -37,7 +37,7 @@ body
                     img(src="./img/arrow_down.svg")
 
      section.section.section--works.about--none
-            .block__title Мои работы
+            .block__title.block__title--works Мои работы
             .triangle.triangle--black.triangle-left
                     svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
                         polygon(points="0,0 0,150 1000,150")
@@ -53,16 +53,15 @@ body
                         h3.school__site__subtitle HTML, CSS, JAVASCRIPT
                         a(href="http://loftschool.com" target="_blank"): button(type="button").button Посмотреть все работы
                 section.school__preview
-
                     article.school__preview-art
                         img.school__preview-art__img(src="./img/spritephoto.png")
                     .school__preview-case
                         .school__preview-case--left
                             img(src="./img/mockup.png")
                         .school__preview-case--right
-                            //- img(src="./img/itloft.png")
+                          
      section.section.form
-        .block__title.block__title--weight Что обо мне говорят 
+        .block__title--weight Что обо мне говорят 
 
         blockquote.quote
             .quote-container
@@ -83,34 +82,34 @@ body
                 textarea.form-application__textarea(placeholder="Ваше сообщение")
                 button(type="submit").button.button--form Отправить
                 button.button.button--transparent Очистить
-        footer.site-footer
-        .site-footer__block
-            h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
+        //- footer.site-footer.site-footer--works
+        //- .site-footer__block
+        //-     h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
 
-        .site-footer__block
-            nav.site-footer__menu
+        //- .site-footer__block
+        //-     nav.site-footer__menu
         
-                ul.main-menu--footer
-                -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-                -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
-                -for (var i=0;i<4;i++)
-                        li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+        //-         ul.main-menu--footer
+        //-         -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
+        //-         -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
+        //-         -for (var i=0;i<4;i++)
+        //-                 li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
 
-            .site-footer__social 
-                ul.socials.socials--footer
-                    li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
-                    li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
-                    li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
-        .site-footer__block
-            .site-footer__contacts
-                ul.contacts__list.contacts__list--footer
-                    li.contacts__item--footer.contacts__item--block deadspace290
-                    li.contacts__item--footer.contacts__item--block vereshhagin98@mail.ru
-                    li.contacts__item--footer.contacts__item--block +7(952)-796-11-99
-                    li.contacts__item--footer.contacts__item--block г. Калининград 
+        //-     .site-footer__social 
+        //-         ul.socials.socials--footer
+        //-             li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+        //-             li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+        //-             li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+        //- .site-footer__block
+        //-     .site-footer__contacts
+        //-         ul.contacts__list.contacts__list--footer
+        //-             li.contacts__item--footer.contacts__item--block deadspace290
+        //-             li.contacts__item--footer.contacts__item--block vereshhagin98@mail.ru
+        //-             li.contacts__item--footer.contacts__item--block +7(952)-796-11-99
+        //-             li.contacts__item--footer.contacts__item--block г. Калининград 
 
-        .site-footer__underfooter
-            h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
+        //- .site-footer__underfooter
+        //-     h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
 
 
     
