@@ -58,10 +58,22 @@
                 text-align: center; 
                 padding: 40px 10px;
                 display: inline-block;
-                
+
                 @include atTabletsPortrait {
                     margin: 0 auto;
                 }
+            }
+            &--about {
+                color: #474b57;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.52;
+                text-transform: uppercase;
+                text-align: center;
+                position: relative;
+                font-family: 'SansusWebsimmo', sans-serif;
+                z-index: 2;
+                padding: 40px 0;
             }
 
 

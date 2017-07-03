@@ -11,6 +11,7 @@
 
     @include atTabletsPortrait {
         height: 190px;
+        display: none;
     }
 
     &--welcome {
@@ -51,7 +52,7 @@
         padding:10px 0;
     }
     &__menu {
-       
+        text-align: center;
         
         @include atTabletsPortrait {
             padding: 0 80px;

@@ -67,12 +67,16 @@ body
             .quote-container
                     img(src='./img/kdn.png')
                     p.quote__text тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    p.quote__sign Ковальчук Дмитрий — основатель Loftschool
+                    p.quote__sign Ковальчук Дмитрий — 
+                    |
+                    <span>основатель Loftschool</span>
         blockquote.quote
             .quote-container
                     img(src='./img/kdn.png')
                     p.quote__text тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                    p.quote__sign Сабанцев Владимир — преподаватель
+                    p.quote__sign Сабанцев Владимир — 
+                    |
+                    <span>преподаватель</span>
         
         form.form-application
             .form-application-container
@@ -82,35 +86,5 @@ body
                 textarea.form-application__textarea(placeholder="Ваше сообщение")
                 button(type="submit").button.button--form Отправить
                 button.button.button--transparent Очистить
-        //- footer.site-footer.site-footer--works
-        //- .site-footer__block
-        //-     h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
-
-        //- .site-footer__block
-        //-     nav.site-footer__menu
-        
-        //-         ul.main-menu--footer
-        //-         -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-        //-         -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
-        //-         -for (var i=0;i<4;i++)
-        //-                 li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
-
-        //-     .site-footer__social 
-        //-         ul.socials.socials--footer
-        //-             li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
-        //-             li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
-        //-             li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
-        //- .site-footer__block
-        //-     .site-footer__contacts
-        //-         ul.contacts__list.contacts__list--footer
-        //-             li.contacts__item--footer.contacts__item--block deadspace290
-        //-             li.contacts__item--footer.contacts__item--block vereshhagin98@mail.ru
-        //-             li.contacts__item--footer.contacts__item--block +7(952)-796-11-99
-        //-             li.contacts__item--footer.contacts__item--block г. Калининград 
-
-        //- .site-footer__underfooter
-        //-     h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
-
-
     
 script(src="./js/app.js")
