@@ -1,0 +1,65 @@
+.user {
+
+    position: absolute;
+    top:130px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    background: url('./img/stars2.svg');
+    // z-index: ;
+
+
+    &--welcome {
+       background: rgba(#182742,0.8);
+        top:50%;
+        width:300px;
+        padding:40px 0px;
+        padding-top:40px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+
+              
+    }
+    &--works {
+       top:200px;
+    }
+
+    &--about {
+        top: 40%;
+    }
+    &__suptitle {
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+
+    &--blog {
+        top:210px;
+    }
+
+    &__title {
+
+        &--weight {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 3rem;
+
+        }
+    }
+
+    &__avatar {
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+}

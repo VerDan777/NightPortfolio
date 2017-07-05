@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/styles.css")
+    title Document
+body
+     header.section.site-header
+
+            .site-header__socials
+                        ul.socials
+                            li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                            li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                            li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+
+
+            .hamburger__menu-icon: .hamburger__menu-icon__middle
+
+            .main-menu
+                .main-menu__list
+                    -var menuItems = [' Главная',  'Обо мне', 'Мои работы','Блог']
+                    -var menuLinks = ['index.html','about.html', 'works.html', 'blog.html']
+                    -for (var i = 0;i<4;i++)
+                        li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
+
+            .user.user--works
+                .user__icon
+                        img.user__avatar(src="./img/avatar.jpg")
+                h2.user__title Даниил Верещагин
+                p.user__suptitle Личный сайт веб разработчика
+            
+            .arrow.site-header__scroll
+                .arrow-down-pic
+                    img(src="./img/arrow_down.svg")
+
+     section.section.section--works.about--none
+            .block__title.block__title--works Мои работы
+            .triangle.triangle--black.triangle-left
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
+                        polygon(points="0,0 0,150 1000,150")
+
+            .triangle.triangle--black.triangle-right
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none" )
+                        polygon(points="1000,0 1000,150 0,150")  
+
+            .school
+                section.school__site
+                    article.school__site__info
+                        h1.school__site__title Сайт школы онлайн <br> образования 
+                        h3.school__site__subtitle HTML, CSS, JAVASCRIPT
+                        a(href="http://loftschool.com" target="_blank"): button(type="button").button Посмотреть все работы
+                section.school__preview
+                    article.school__preview-art
+                        img.school__preview-art__img(src="./img/spritephoto.png")
+                    .school__preview-case
+                        .school__preview-case--left
+                            img(src="./img/mockup.png")
+                        .school__preview-case--right
+                          
+     section.section.form
+        .block__title--big Что обо мне говорят 
+
+        blockquote.quote
+            .quote-container
+                    img(src='./img/kdn.png')
+                    p.quote__text тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    p.quote__sign Ковальчук Дмитрий — 
+                    |
+                    <span>основатель Loftschool</span>
+        blockquote.quote
+            .quote-container
+                    img(src='./img/kdn.png')
+                    p.quote__text тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    p.quote__sign Сабанцев Владимир — 
+                    |
+                    <span>преподаватель</span>
+        
+        form.form-application
+            .form-application-container
+                h2.form-application__title Связаться со мной
+                input.form-application__input(type="text" placeholder="Ваше имя")
+                input.form-application__input(type="text" placeholder="Ваш email")
+                textarea.form-application__textarea(placeholder="Ваше сообщение")
+                button(type="submit").button.button--form Отправить
+                button.button.button--transparent Очистить
+    
+script(src="./js/app.js")

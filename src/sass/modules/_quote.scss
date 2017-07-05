@@ -1,0 +1,35 @@
+.quote {
+    text-align: center;
+
+    &-container {
+
+        @include atTabletsPortrait {
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+    img {
+        border-radius: 50%;
+    }
+
+    &__text {
+        font-family: 'Roboto',sans-serif;
+        font-style: italic;
+        color:white;
+        line-height: 1.53;
+        
+    }
+    
+    &__sign {
+        color: white;
+        font-weight: bold;
+        font-family: 'Roboto',sans-serif;
+
+    }
+    span {
+        font-weight: 100;
+        color:white;
+        font-family: 'Roboto',sans-serif;
+
+    }
+}

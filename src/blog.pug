@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="./css/styles.css")
+    title Document
+body
+    header.section.site-header.site-header--blog
+
+            .site-header__socials
+                        ul.socials
+                            li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                            li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                            li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+
+
+            .hamburger__menu-icon: .hamburger__menu-icon__middle
+
+            .main-menu
+                .main-menu__list
+                    -var menuItems = [' Главная', 'Обо мне ', 'Мои работы','Блог']
+                    -var menuLinks = ['index.html','about.html', 'works.html', 'blog.html']
+                    -for (var i = 0;i<4;i++)
+                        li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
+
+            .user.user--blog
+                .user__icon
+                        img.user__avatar(src="./img/avatar.jpg")
+                h2.user__title.user__title--weight БЛОГ
+                p.user__suptitle.user__suptitle--weight Статьи, которые я написал
+            
+            .arrow.site-header__scroll
+                .arrow-down-pic
+                    img(src="./img/arrow_down.svg")
+    section.section.about.about--white.section--blog
+            .triangle.triangle--white.triangle-left
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
+                        polygon(points="0,0 0,150 1000,150")
+
+            .triangle.triangle--white.triangle-right
+                    svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none" )
+                        polygon(points="1000,0 1000,150 0,150")
+            
+            aside.about__menu
+          
+                -var menuitem = ['Самое важное в SASS ', 'Приёмы в вёрстке, без которых ','Самый необходимый набор Gulp плагинов','Почему я выбрал Jade']
+                -var meniLinks = ['#','#','#', '#']
+                ul.about__list
+                    -for(var i=0;i<4;i++)
+                        li.about__item: a.about__link(href=menuLinks)=menuitem[i]
+            .blog
+                .blog__container
+                    mixin blog(title,date,text,imgURL) 
+                        .blog__title= title
+                        .blog__date= date
+                        .blog__text= text
+                        img.blog__img(src=imgURL)
+
+                    +blog('Самое важное в Sass', '22 ноября 2016', 'Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.','./img/example.png')
+                    +blog('Приёмы в вёрстке, без которых не обходится ни один сайт', '3 ноября 2016','Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.')
+
+script(src="./js/app.js")

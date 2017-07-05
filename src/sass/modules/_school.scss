@@ -1,0 +1,132 @@
+.school {
+
+    height: 450px;
+    position: relative;
+    
+    @include atTabletsPortrait {
+        height: 750px;
+    }
+
+    &__site {
+
+            background-color: #f2f0e8;
+            width: 100%; 
+            display: inline-block;
+            margin-right: -4px;
+            // position: absolute;
+            // left: 0;
+
+            
+            @include atTabletsPortrait {
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+            
+        
+
+        &__info {
+        
+            text-align: center;   
+            padding:10% 0;
+            
+            @include atTabletsPortrait {
+                padding: 50% 0;
+            }
+            
+            
+        }
+        &__title {
+            color:#474b57;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+             
+
+            &::after {
+                content: '';
+                height: 1px;
+                width:85px;
+                background: #9c9d9f;
+                display: block;
+                margin: 0 auto;
+       
+            }
+        }
+        &__subtitle {
+            color: #083c96;
+        }
+    }
+&__preview {
+
+    background-color: #e3e2de;
+    width: 100%; 
+    display: block;
+
+   @include atTabletsPortrait {
+       width: 50%;
+       height: 750px;
+       position: absolute;
+       right: 0;
+       top:0;
+   }
+//    position: relative;s
+}
+&__preview-art {
+    width:100%;
+    text-align:  center;
+    padding:50px 40px;
+
+    @include atTabletsPortrait {
+    width:0%;
+    padding:0 0; 
+
+    }
+}
+&__preview-art__img {
+    width: 240px;
+    height: 120px;
+    // margin:120px 100px;
+    @include atTabletsPortrait {
+        margin: 120px 100px;
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+&__preview-case {
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    bottom: 0;
+    display: inline;  
+    img {
+        display: inline;
+        width: 150px;
+        height: 150px;
+        z-index: -1;
+    }
+
+
+}
+
+&__preview-case--left {
+        //  padding:50px 50px;
+        background: #b7b1b6;
+        z-index: 1;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 0;
+        display: none;
+        
+        @include atTabletsPortrait {
+            display: block;
+        }
+}
+
+
+
+
+    
+}

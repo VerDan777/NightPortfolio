@@ -1,0 +1,19 @@
+.section {
+
+    position: relative;
+    width: 100%;
+
+    &--welcome {
+        
+    height: 100%;
+
+    }
+
+    &--works {
+        // min-height: 100vh;
+    }
+    &--blog {
+        height: 100%;
+    }
+
+}

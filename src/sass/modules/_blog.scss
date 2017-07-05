@@ -1,0 +1,40 @@
+.blog {
+background: #faf8f0;
+
+
+&__container {
+    margin: 0 auto;
+    padding-left: 5px;
+    @include atTabletsPortrait {
+        padding-left:120px;
+        width: 780px;
+    }
+
+}
+&__title {
+
+    color:#474b57;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'SansusWebsimmo',sans-serif;
+    padding-bottom: 40px;
+    width: 350px;
+
+    @include atTabletsPortrait {
+        font-size: 2rem;
+    }
+
+}
+&__date {
+    color:#9fa8c5;
+    padding-bottom: 30px;
+
+}
+
+&__text {
+    font-family: 'Roboto',sans-serif;
+  
+}
+
+
+}

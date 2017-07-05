@@ -1,0 +1,11 @@
+.arrow {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    bottom:20%;
+    display: none;
+
+    @include atTabletsPortrait {
+        display: block; 
+    }
+}

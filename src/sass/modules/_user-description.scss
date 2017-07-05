@@ -1,0 +1,29 @@
+.user-description {
+
+    height: 100%;
+    @include atTabletsPortrait {
+        margin-left: 50%;
+
+    }
+    
+
+
+    &__avatar {
+        height: 350px;
+        
+    }
+    img {
+
+        height: 100%;
+        width: 100%;
+    }
+    &__text  {
+        padding: 0 5px;
+        color:#474b57;
+        font-family: 'Roboto',sans-serif;
+ 
+        @include atTabletsPortrait {
+            padding: 0 0;
+    }
+}
+}
