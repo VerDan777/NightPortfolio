@@ -1,6 +1,8 @@
 import MobileMenu from './modules/MobileMenu.js';
 import Spinner from './modules/Spinner.js';
+import Validation from './modules/Validation.js';
 
+const validation = new Validation();
 const mobilemenu = new MobileMenu();
 const spinner = new Spinner();
 

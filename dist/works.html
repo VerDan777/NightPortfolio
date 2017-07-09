@@ -88,13 +88,13 @@
         <p class="quote__sign">Сабанцев Владимир — </p><span>преподаватель</span>
       </div>
     </blockquote>
-    <form class="form-application">
+    <form class="form-application" action="" method="post" novalidate="novalidate">
       <div class="form-application-container">
         <h2 class="form-application__title">Связаться со мной</h2>
-        <input class="form-application__input" type="text" placeholder="Ваше имя"/>
-        <input class="form-application__input" type="text" placeholder="Ваш email"/>
-        <textarea class="form-application__textarea" placeholder="Ваше сообщение"></textarea>
-        <button class="button button--form" type="submit">Отправить</button>
+        <input class="form-application__input" type="text" placeholder="Ваше имя" id="name"/>
+        <input class="form-application__input" type="text" placeholder="Ваш email" id="email"/>
+        <textarea class="form-application__textarea" placeholder="Ваше сообщение" id="message"></textarea>
+        <button class="button button--form" type="submit" name="submit">Отправить</button>
         <button class="button button--transparent">Очистить</button>
       </div>
     </form>

@@ -78,13 +78,13 @@ body
                     |
                     <span>преподаватель</span>
         
-        form.form-application
+        form.form-application(action="" method="post" novalidate="novalidate")
             .form-application-container
                 h2.form-application__title Связаться со мной
-                input.form-application__input(type="text" placeholder="Ваше имя")
-                input.form-application__input(type="text" placeholder="Ваш email")
-                textarea.form-application__textarea(placeholder="Ваше сообщение")
-                button(type="submit").button.button--form Отправить
+                input.form-application__input(type="text" placeholder="Ваше имя" id="name")
+                input.form-application__input(type="text" placeholder="Ваш email" id="email")
+                textarea.form-application__textarea(placeholder="Ваше сообщение" id="message")
+                button(type="submit" name="submit").button.button--form Отправить
                 button.button.button--transparent Очистить
     
 script(src="./js/app.js")
