@@ -1,7 +1,8 @@
 import MobileMenu from './modules/MobileMenu.js';
-
+import Spinner from './modules/Spinner.js';
 
 const mobilemenu = new MobileMenu();
+const spinner = new Spinner();
 
 
 window.initMap=function() {
