@@ -10,23 +10,23 @@ body
     .spinner: img.spinner__img(src="./img/spinner.svg")
     header.section--welcome.site-header--welcome
         a(href="#").button.button--auth Авторизоваться
-
-        .user.user--welcome
-            .user-icon
-                img.user__avatar(src="./img/avatar.jpg")
-            h2.user__title Даниил Верещагин
-            p.user__suptitle Личный сайт веб разработчика
-            ul.socials
-                li.socials__item: a(href="https://vk.com/id323298615" target='_blank').socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
-                li.socials__item: a(href="https://github.com/VerDan777" target='_blank').socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
-                li.socials__item: a(href="#" target='_blank').socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
-                
-            ul.main-menu--welcome
-                - var menuitems = ['Мои работы', 'Обо мне', 'Блог'];
-                - var menulinks = ['works.html','about.html','blog.html'];
-                - for (var i=0; i<3;i++)
-                    li.main-menu__item.main-menu__item--welcome: a.main-menu__link--welcome(href=menulinks[i])=menuitems[i]
-        
+        .flip
+            .user.user--welcome
+                .user-icon
+                    img.user__avatar(src="./img/avatar.jpg")
+                h2.user__title Даниил Верещагин
+                p.user__suptitle Личный сайт веб разработчика
+                ul.socials
+                    li.socials__item: a(href="https://vk.com/id323298615" target='_blank').socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                    li.socials__item: a(href="https://github.com/VerDan777" target='_blank').socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                    li.socials__item: a(href="#" target='_blank').socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+                    
+                ul.main-menu--welcome
+                    - var menuitems = ['Мои работы', 'Обо мне', 'Блог'];
+                    - var menulinks = ['works.html','about.html','blog.html'];
+                    - for (var i=0; i<3;i++)
+                        li.main-menu__item.main-menu__item--welcome: a.main-menu__link--welcome(href=menulinks[i])=menuitems[i]
+            
     footer.site-footer.site-footer--welcome
          .site-footer__underfooter.site-footer__underfooter--welcome
             h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
