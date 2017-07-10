@@ -10332,6 +10332,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Spinner_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_Validation_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_Sidebar_js__ = __webpack_require__(6);
+
+
 
 
 
@@ -10339,6 +10342,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const mobilemenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu_js__["a" /* default */]();
 const spinner = new __WEBPACK_IMPORTED_MODULE_1__modules_Spinner_js__["a" /* default */]();
 const validation = new __WEBPACK_IMPORTED_MODULE_2__modules_Validation_js__["a" /* default */]();
+const sidebar = new __WEBPACK_IMPORTED_MODULE_3__modules_Sidebar_js__["a" /* default */]();
 
 
 window.initMap=function() {
@@ -12263,6 +12267,42 @@ if ( $.ajaxPrefilter ) {
 }
 return $;
 }));
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+class Sidebar {
+    constructor() {
+        this.buttonSidebar = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a('#sidebar-toogle');
+        this.sidebar = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a('.about__menu');
+        this.events();
+        // this.toggleTheMenu();
+    }
+    events() {
+  
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default.a(this.buttonSidebar).click(function() {
+
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a('.about__menu').animate({
+      left:'0px'
+    },200);
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a('body').animate({
+      left:'285px'
+    },200);
+
+    // var toggle_el = $(this).data("toggle");
+    // $(toggle_el).toggleClass("about__menu--open");
+  });
+    }
+ 
+    
+}
+/* harmony default export */ __webpack_exports__["a"] = (Sidebar);
 
 /***/ })
 /******/ ]);

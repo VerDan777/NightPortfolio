@@ -44,14 +44,15 @@ body
                         polygon(points="1000,0 1000,150 0,150")
             
             aside.about__menu
-          
-                -var menuitem = ['Самое важное в SASS ', 'Приёмы в вёрстке, без которых ','Самый необходимый набор Gulp плагинов','Почему я выбрал Jade']
-                -var meniLinks = ['#','#','#', '#']
-                ul.about__list
-                    -for(var i=0;i<4;i++)
-                        li.about__item: a.about__link(href=menuLinks)=menuitem[i]
+                .about__sidebar
+                    -var menuitem = ['Самое важное в SASS ', 'Приёмы в вёрстке, без которых ','Самый необходимый набор Gulp плагинов','Почему я выбрал Jade']
+                    -var meniLinks = ['#','#','#', '#']
+                    ul.about__list
+                        -for(var i=0;i<4;i++)
+                            li.about__item: a.about__link(href=menuLinks)=menuitem[i]
+            button(data-toggle=".about__sidebar" id="sidebar-toogle" )
             .blog
-                .blog__container
+            .blog__container
                     mixin blog(title,date,text,imgURL) 
                         .blog__title= title
                         .blog__date= date

@@ -5,20 +5,33 @@
     @include atTabletsPortrait {
         height: 100%;
     }
+    &__menu {
+        position: relative;
+    }
     
     &--white {
         background: #faf8f0;
     }
     &--none {
         background: none;
-    }
+    } 
+    &__sidebar {
+            position: absolute;
+            left: 240px;
+            background: $maincolor;
+            width: 240px;
+            height: 100%;
+            &--open {
+              left: -240px;
+            }
+        }
     &__list {
         display: block;
         font-family: 'Roboto', sans-serif;
         color: #848e91;
         padding: 0px 50px;
         float: left;
-        display: none;
+        // display: none;
 
         @include atTabletsPortrait {
             display: block;
@@ -79,9 +92,14 @@
 
         &__menu {
             // display: none;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                transition: left  0.4s ease-in-out;
             @include atTabletsPortrait {
                 display: block;
             }
         } 
+       
     }
 }
