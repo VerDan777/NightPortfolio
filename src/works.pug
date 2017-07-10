@@ -85,6 +85,11 @@ body
                 input.form-application__input(type="text" placeholder="Ваш email" id="email")
                 textarea.form-application__textarea(placeholder="Ваше сообщение" id="message")
                 button(type="submit" name="submit").button.button--form Отправить
-                button.button.button--transparent Очистить
-    
+                button.button.button--transparent(type="reset") Очистить
+
+        #order-popup.order-popup
+            .order-popup__content
+                h2.order-popup__title Отправка заявки
+                a(href="#" hidden).button.order-popup__button OK
+        
 script(src="./js/app.js")
