@@ -1,7 +1,10 @@
 import MobileMenu from './modules/MobileMenu.js';
-
+import Spinner from './modules/Spinner.js';
+import Validation from './modules/Validation.js';
 
 const mobilemenu = new MobileMenu();
+const spinner = new Spinner();
+const validation = new Validation();
 
 
 window.initMap=function() {

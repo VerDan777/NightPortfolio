@@ -41,6 +41,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "jquery": "^3.2.1",
+    "jquery-validation": "^1.16.0",
     "normalize.css": "^7.0.0"
   }
 }
