@@ -10,9 +10,8 @@ body
     .spinner: img.spinner__img(src="./img/spinner.svg")
     header.section--welcome.site-header--welcome
          a(href="#").button.button--auth Авторизоваться
-         .flip-container(ontouchstart="this.classList.toggle('hover');")
+         .flip-container(ontouchstart="this.classList.toggle('click');")
              .flipper
-            
                     .front
                         .user.user--welcome
                             .user-icon
@@ -38,10 +37,22 @@ body
                             .form-auth__group
                                 img(src="#").form-auth__img
                                 input.form-auth__input(type="text" placeholder="Логин")
-                            .form-auth__group
-                                img(src="#").form-auth__img
-                                input.form-auth__input(type="text" placeholder="Логин")
-        
+                            input(type='checkbox', name='hidden', value=0, checked='').form-auth__checkbox
+                            | Я человек
+                            p.form-auth__text Вы точно не робот?
+                            .form-auth__radio-group
+                                input(type="radio" checked).form-auth__radio 
+                                | Да
+                                input(type="radio").form-auth__radio 
+                                | Нет
+                            ul.main-menu--welcome
+                                - var menuitems = ['На главную', 'Войти'];
+                                - var menulinks = ['index.html','auth.html'];
+                                - for (var i=0; i<2;i++)
+                                    li.main-menu__item.main-menu__item--auth: a.main-menu__link--welcome(href=menulinks[i])=menuitems[i]
+
+                                
+    
                             
     footer.site-footer.site-footer--welcome
          .site-footer__underfooter.site-footer__underfooter--welcome

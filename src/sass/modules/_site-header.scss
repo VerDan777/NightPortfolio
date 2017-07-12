@@ -13,8 +13,21 @@
 
     }
     &--welcome {
-        background-image: url('../img/welcome1.png'); 
+        background: url('../img/welcome1.png') bottom left repeat-x; 
         height: 100vh;
+        // position: fixed;
+        // left: 0;
+        // width: 1920px;
+        // animation: bg 120s linear infinite;
+
+    }
+    @keyframes bg {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-1440px);
+        }
     }
     &--about {
      background-image: url('../img/welcome1.png'); 

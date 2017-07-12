@@ -103,6 +103,18 @@
 
             }
         }
+        &--auth {
+            background: #0548bd;
+            border-right:1px solid white; 
+            padding:20px 42px;
+            font-family: 'Roboto',sans-serif;
+            
+              &:hover,focus,active {
+                background: #083c96;
+
+            }
+
+        }
 
     }
 

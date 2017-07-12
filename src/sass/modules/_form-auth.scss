@@ -1,6 +1,12 @@
 .form-auth {
     padding: 0 30px;
-
+     background: rgba(#182742,0.8);
+        width:300px;
+        padding:40px 0px;
+        padding-top:40px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
     &__group {
         position: relative;
     }
@@ -23,5 +29,20 @@
             outline: 1px solid red;
             transition: 0.6s ease-in-out;
         }
+    }
+    &__checkbox {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    &__text {
+        color:white;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+    }
+    &__radio-group {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
     }
 }
