@@ -9,6 +9,27 @@
          width: 380px;
      }
 
+     &--welcome {
+        background: rgba(#182742,0.8);
+        top:50%;
+        width:300px;
+        padding:40px 0px;
+        padding-top:40px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+         position: absolute;
+    top:130px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    font-family: 'Roboto',sans-serif;
+    background: url('./img/stars2.svg');
+    
+        
+     }
+
      &-container {
 
          padding-top:50px;

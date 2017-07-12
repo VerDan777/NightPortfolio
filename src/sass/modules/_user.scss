@@ -1,26 +1,30 @@
 .user {
 
-    position: absolute;
-    top:130px;
-    left:50%;
+    position: absolute;;
+    top: 400px;
+    left: 700px; 
     transform: translate(-50%,-50%);
     text-align: center;
     color:white;
     font-family: 'Roboto',sans-serif;
     background: url('./img/stars2.svg');
-    // z-index: ;
+    
+
+
 
 
     &--welcome {
        background: rgba(#182742,0.8);
-        top:50%;
         width:300px;
         padding:40px 0px;
         padding-top:40px;
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 0;
-
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+        
               
     }
     &--works {
