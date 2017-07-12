@@ -8,58 +8,59 @@ head
     title Document
 body
     header.admin-header
-        .admin-header__up
+        .admin-header-up
             h1.admin-header__title  Панель администрирования
             a(href="index.html").admin-header-up__link Вернуться на сайт 
         .admin-header__down
             .tabs
                 ul.tabs__list
-                    li.tabs__item: a.tabs__link(href="#") TAB 1
+                    li.tabs__item.current: a.tabs__link(href="#") TAB 1
                     li.tabs__item: a.tabs__link(href="#") TAB 2
                     li.tabs__item: a.tabs__link(href="#") TAB 3
                     li.tabs__item: a.tabs__link(href="#") TAB 4
 
     main.admin-main
         h2.admin-main__title Страница «Обо мне»
-            mixin admin-table(title)
-                h2.admin-table__title=title
-                table
-                    mixin table-item(titletheme,inputval)
-                
-                            tr.admin-table__item
-                                    td.admin-table__titleTheme=titletheme
-                                    td.admin-table__input 
-                                        input(type="text" value=inputval) 
-                    +table-item('HTML','100')
-                    +table-item('CSS','90')
-                    +table-item('JS','80')
-            +admin-table('Frontend') 
-            mixin admin-table1(title1)
-                h2.admin-table__title=title1
-                table 
-                    mixin table-item1(titletheme1,inputval1)
-                      
-                            tr.admin-table__item
-                                    td.admin-table__titleTheme=titletheme1
-                                    td.admin-table__input 
-                                        input(type="text" value=inputval1) 
-                    +table-item1('PHP','100')
-                    +table-item1('NODE','90')
-                    +table-item1('JS','80')
-            +admin-table1('Backend')
-            mixin admin-table2(title2)
-                h2.admin-table__title=title2
-                table 
-                    mixin table-item2(titletheme2,inputval2)
-                      
-                            tr.admin-table__item
-                                    td.admin-table__titleTheme=titletheme2
-                                    td.admin-table__input 
-                                        input(type="text" value=inputval2) 
-                    +table-item2('PHP','100')
-                    +table-item2('NODE','90')
-                    +table-item2('JS','80')
-            +admin-table2('Workflow')
+        .admin-table__container
+                mixin admin-table(title)
+                    h2.admin-table__title=title
+                    table.admin-table
+                        mixin table-item(titletheme,inputval)
+                    
+                                tr.admin-table__item
+                                        td.admin-table__titleTheme=titletheme
+                                        td.admin-table__input 
+                                            input(type="text" value=inputval) 
+                        +table-item('HTML','100')
+                        +table-item('CSS','90')
+                        +table-item('JS','80')
+                +admin-table('Frontend') 
+                mixin admin-table1(title1)
+                    h2.admin-table__title=title1
+                    table.admin-table 
+                        mixin table-item1(titletheme1,inputval1)
+                        
+                                tr.admin-table__item
+                                        td.admin-table__titleTheme=titletheme1
+                                        td.admin-table__input 
+                                            input(type="text" value=inputval1) 
+                        +table-item1('PHP','100')
+                        +table-item1('NODE','90')
+                        +table-item1('JS','80')
+                +admin-table1('Backend')
+                mixin admin-table2(title2)
+                    h2.admin-table__title=title2
+                    table.admin-table 
+                        mixin table-item2(titletheme2,inputval2)
+                        
+                                tr.admin-table__item
+                                        td.admin-table__titleTheme=titletheme2
+                                        td.admin-table__input 
+                                            input(type="text" value=inputval2) 
+                        +table-item2('PHP','100')
+                        +table-item2('NODE','90')
+                        +table-item2('JS','80')
+                +admin-table2('Workflow')
 
         a(href="#").button.button--admin Сохранить 
                         

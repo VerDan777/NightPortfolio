@@ -1,0 +1,22 @@
+.tabs {
+
+    &__list {
+        display: inline-block;
+        list-style-type: none;
+
+    }
+    &__item {
+        display: inline-block;
+        padding:35px 80px;
+        border-right: 1px solid white;
+        &:hover {
+            background: white;
+            transition: 0.3s ease-in-out;
+        }
+
+    a {
+          text-decoration: none;
+    }
+    
+    }
+}
