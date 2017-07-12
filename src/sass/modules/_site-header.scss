@@ -15,7 +15,7 @@
     &--welcome {
         background: url('../img/welcome1.png') bottom left repeat-x; 
         height: 100vh;
-        // position: fixed;
+        // // position: fixed;
         // left: 0;
         // width: 1920px;
         // animation: bg 120s linear infinite;
@@ -26,7 +26,7 @@
             transform: translateX(0);
         }
         to {
-            transform: translateX(-1440px);
+            transform: translateX(1440px);
         }
     }
     &--about {

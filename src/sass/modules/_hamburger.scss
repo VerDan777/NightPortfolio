@@ -1,7 +1,7 @@
 .hamburger {
 
     &__menu-icon {
-
+        // positioning
         position: absolute;
         right: 25px;
         top: 35px;
@@ -38,9 +38,8 @@
             background-color: white;
             transition: transform 0.3s ease-out;
         }
-    }
 
-    &__menu-icon__middle { 
+        &__middle {
             // positioning
             position: absolute;
             left: 0;
@@ -54,7 +53,7 @@
             // visual
             background-color: white;
             transition: transform 0.3s ease-out;
-        
+        }
 
         &::after {
             content: "";
@@ -75,7 +74,6 @@
             transition: transform 0.3s ease-out;
             // border-radius: 4px;
         }
-    }   
          &--close-x {
             &::before {
                 // positioning
@@ -84,7 +82,6 @@
                 // visual
                 background-color: white;
             }
-
             .hamburger__menu-icon__middle {
                 // positioning
                 transform: scaleX(0);
@@ -100,6 +97,7 @@
                 // visual
                 background-color: white;
             }
-        } 
+
     }
-  
+}
+}
