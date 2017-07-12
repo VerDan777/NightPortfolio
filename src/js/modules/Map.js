@@ -1,3 +1,4 @@
+
  class Map  {
    constructor() {
 window.initMap=function() {
