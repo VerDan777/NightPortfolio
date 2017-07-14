@@ -23,7 +23,7 @@ global.$ = {
 $.gulp.task('default',$.gulp.series(
     'clean',
     $.gulp.parallel(
-        'sass',
+        'sass',ш
         'pug',
         'js',
         'copyImg',

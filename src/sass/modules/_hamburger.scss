@@ -91,12 +91,14 @@
             }
 
             &::after {
+
                 // positioning
                 transform: rotate(-45deg) scaleX(1.178);
 
                 // visual
                 background-color: white;
             }
+            
 
     }
 }

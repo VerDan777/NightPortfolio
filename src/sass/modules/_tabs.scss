@@ -1,14 +1,20 @@
 .tabs {
 
     &__list {
-        display: inline-block;
+        display:block;
         list-style-type: none;
 
     }
     &__item {
-        display: inline-block;
+        display: block;
         padding:35px 80px;
         border-right: 1px solid white;
+        text-align: center;
+    
+        @include atTabletsLandscape {
+            text-align: justify;
+            display: inline-block;
+        }
         &:hover {
             background: white;
             transition: 0.3s ease-in-out;
@@ -17,6 +23,6 @@
     a {
           text-decoration: none;
     }
-    
+
     }
 }
