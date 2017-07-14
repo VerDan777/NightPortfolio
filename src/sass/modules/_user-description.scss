@@ -9,14 +9,12 @@
 
 
     &__avatar {
-        height: 350px;
+        max-height: 100%;
+        max-width: 100%;
+        text-align: center;
         
     }
-    img {
-
-        height: 100%;
-        width: 100%;
-    }
+  
     &__text  {
         padding: 0 5px;
         color:#474b57;
@@ -25,5 +23,16 @@
         @include atTabletsPortrait {
             padding: 0 0;
     }
+  
 }
+  &-content {
+        max-width: 100%;
+        max-height: 350px;
+        display: inline-block;
+       
+        // display: block;
+
+
+    }
+
 }

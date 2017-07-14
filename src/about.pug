@@ -28,7 +28,7 @@ body
                         li.main-menu__item--header: a.main-menu__link--header(href=menuLinks[i])= menuItems[i]
 
             .user.user--about
-                .user__icongit
+                .user__icon
                         img.user__avatar(src="./img/avatar.jpg")
                 h2.user__title Даниил Верещагин
                 p.user__suptitle Личный сайт веб разработчика
@@ -50,9 +50,6 @@ body
                         .block__title.block__title--pd50.block__title--line Кто я  
                     .user-description__text 
                         p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        br
-                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-        
 
 
             .triangle.triangle--beige.triangle-right
@@ -78,35 +75,19 @@ body
                                                 svg.skill__circle
                                                     use(xlink:href="./img/sprite.svg#")
                                                 .skill__title
-    .contacts 
-            .contacts__title
-                .block__suptitle Контакты
-            ul.contacts__list
-                li.contacts__item skype__kdn
-                    img(src="./img/skype.svg")
-                li.contacts__item  +7(952)-796-11-99 
-                    img(src="./img/skype.svg")
-                br
-                li.contacts__item astakhov@gmail.com
-                    img(src="./img/skype.svg")
-                li.contacts__item г.Калининград
-                    img(src="./img/skype.svg")
-    section.section.map
-       #google-map.google-map
 
-       footer.site-footer
+    section.section.map
+        #google-map.google-map
+        footer.site-footer
                 .site-footer__block
                     h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
-
                 .site-footer__block
                     nav.site-footer__menu
-                
                         ul.main-menu--footer
                         -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
                         -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
                         -for (var i=0;i<4;i++)
                                 li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
-
                     .site-footer__social 
                         ul.socials.socials--footer
                             li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")

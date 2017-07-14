@@ -1,10 +1,9 @@
 .contacts {
 
     background: rgba(#fbfbfb,0.8);
-    // width: 500px;
-    // height: 285px;
     margin: 0 auto;
     display: block;
+    z-index: 1;
 
     @include atTabletsPortrait {
 
