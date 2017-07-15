@@ -17,15 +17,15 @@
         background: none;
     } 
     &__sidebar {
-            position: absolute;
-            left: 240px;
-            background: $maincolor;
-            width: 240px;
-            height: 100%;
-            &--open {
-              left: -240px;
-            }
+        position: absolute;
+        left: 240px;
+        background: $maincolor;
+        width: 240px;
+        height: 100%;
+        &--open {
+            left: -240px;
         }
+    }
     &__list {
         display: block;
         font-family: 'Roboto', sans-serif;
@@ -65,7 +65,7 @@
     }
     &-right {
         position: relative;
-        background: #f4f5f0;
+        background:#f4f5f0;
 
         @include atTabletsPortrait {
         width: 50%;
