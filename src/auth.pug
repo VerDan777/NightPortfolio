@@ -46,22 +46,21 @@ body
                                                 td.admin-table__titleTheme=titletheme1
                                                 td.admin-table__input 
                                                     input(type="text" value=inputval1) 
-                                +table-item1('PHP','100')
-                                +table-item1('NODE','90')
+                                +table-item1('PHP','10')
+                                +table-item1('NODE','50')
                                 +table-item1('JS','80')
                         +admin-table1('Backend')
                         mixin admin-table2(title2)
                             h2.admin-table__title=title2
                             table.admin-table 
                                 mixin table-item2(titletheme2,inputval2)
-                                
                                         tr.admin-table__item
                                                 td.admin-table__titleTheme=titletheme2
                                                 td.admin-table__input 
                                                     input(type="text" value=inputval2) 
                                 +table-item2('PHP','100')
-                                +table-item2('NODE','90')
-                                +table-item2('JS','80')
+                                +table-item2('NODE','65')
+                                +table-item2('JS','20')
                         +admin-table2('Workflow')
 
                 a(href="#").button.button--admin Сохранить 
