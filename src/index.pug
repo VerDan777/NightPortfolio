@@ -38,13 +38,13 @@ body
                                 img(src="#").form-auth__img
                                 input.form-auth__input(type="text" placeholder="Логин")
                             input(type='checkbox', name='hidden', value=0, checked='').form-auth__checkbox
-                            | Я человек
+                            p.form-auth__text Я человек
                             p.form-auth__text Вы точно не робот?
                             .form-auth__radio-group
                                 input(type="radio" checked).form-auth__radio 
-                                | Да
+                                p.form-auth__text--agree Да
                                 input(type="radio").form-auth__radio 
-                                | Нет
+                                p.form-auth__text--agree Нет
                             ul.main-menu--welcome
                                 - var menuitems = ['На главную', 'Войти'];
                                 - var menulinks = ['index.html','auth.html'];

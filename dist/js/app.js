@@ -94,6 +94,10 @@ var _tabs = __webpack_require__(7);
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
+var _flip = __webpack_require__(8);
+
+var _flip2 = _interopRequireDefault(_flip);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var tabs = new _tabs2.default();
@@ -102,6 +106,7 @@ var spinner = new _Spinner2.default();
 var validation = new _Validation2.default();
 var sidebar = new _Sidebar2.default();
 var map = new _Map2.default();
+var flip = new _flip2.default();
 
 /***/ }),
 /* 1 */
@@ -468,6 +473,47 @@ var Tabs = function () {
 }();
 
 exports.default = Tabs;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Flip = function () {
+    function Flip() {
+        _classCallCheck(this, Flip);
+
+        this.flip_container = $('.flip-container');
+        this.flipper = $('.flipper');
+        this.events();
+    }
+
+    _createClass(Flip, [{
+        key: 'events',
+        value: function events() {
+            $(".flip-container").on("click", function () {
+                $(this).hover(function () {});
+            });
+            // $('.flipper').click(function() {
+            //     // this.css(':hover','transform: rotateY(180deg);');
+            // })
+        }
+    }]);
+
+    return Flip;
+}();
+
+exports.default = Flip;
 
 /***/ })
 /******/ ]);

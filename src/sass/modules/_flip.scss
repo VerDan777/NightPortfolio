@@ -3,14 +3,14 @@
      position: relative;
      margin: 0 auto;
      display: block;
-        &:hover {
-            transform: rotateY(180deg);
-        }
+     background-color: red; 
+
 }
 .flipper {
     transition: 0.6s;
 	transform-style: preserve-3d;
-	position: relative;
+    position: relative;
+    
 }
 .front, .back {
 	backface-visibility: hidden;
@@ -30,11 +30,13 @@
 
 /* back, initially hidden pane */
 .back {
+    // display: none;
 	transform: rotateY(-180deg);
     position:absolute;
     top: 250px;
-    left: 550px;
+    left: 950px;
+    
 }
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
+.flip-container:active .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg); 
 	}

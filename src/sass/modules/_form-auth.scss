@@ -9,17 +9,18 @@
         padding-bottom: 0;
     &__group {
         position: relative;
+        padding: 0 10px;
     }
     &__img {
         position: absolute;
-        top: 0;
-        left: -25px;
+        top: 25%;
+        left: 0;
     }
     &__input {
         margin: 10px 0;
         padding: 10px 0;
         background: white;
-        display: block;
+        display: inline-block;
         outline: none;
         width: 100%;
         font-family: 'Roboto',sans-serif;
@@ -39,10 +40,16 @@
         color:white;
         font-family: 'Roboto',sans-serif;
         text-align: center;
+        
+        &--agree {
+            color: white;
+            font-family: 'Roboto',sans-serif;
+           display: inline-block; 
+        }
     }
     &__radio-group {
         text-align: center;
         margin: 0 auto;
-        display: block;
+        display: block;     
     }
 }
