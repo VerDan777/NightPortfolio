@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <div class="spinner"><img class="spinner__img" src="./img/spinner.svg"/></div>
+  <header class="section--welcome site-header--welcome"><a class="button button--auth" href="auth.html">Авторизоваться</a>
+    <div class="flip-container" ontouchstart="this.classList.toggle('click');">
+      <div class="flipper">
+        <div class="front">
+          <div class="user user--welcome">
+            <div class="user-icon"><img class="user__avatar" src="./img/avatar.jpg"/></div>
+            <h2 class="user__title">Даниил Верещагин</h2>
+            <p class="user__suptitle">Личный сайт веб разработчика</p>
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__link--vk" href="https://vk.com/id323298615" target="_blank">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link--github" href="https://github.com/VerDan777" target="_blank">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link--in" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+            <ul class="main-menu--welcome">
+              <li class="main-menu__item main-menu__item--welcome"><a class="main-menu__link--welcome" href="works.html">Мои работы</a></li>
+              <li class="main-menu__item main-menu__item--welcome"><a class="main-menu__link--welcome" href="about.html">Обо мне</a></li>
+              <li class="main-menu__item main-menu__item--welcome"><a class="main-menu__link--welcome" href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="back">
+          <form class="form-auth">
+            <div class="form-application__title">Авторизуйся</div>
+            <div class="form-auth__group"><img class="form-auth__img" src="#"/>
+              <input class="form-auth__input" type="text" placeholder="Логин"/>
+            </div>
+            <div class="form-auth__group"><img class="form-auth__img" src="#"/>
+              <input class="form-auth__input" type="text" placeholder="Логин"/>
+            </div>
+            <input class="form-auth__checkbox" type="checkbox" name="hidden" value="0" checked=""/>Я человек
+            <p class="form-auth__text">Вы точно не робот?</p>
+            <div class="form-auth__radio-group">
+              <input class="form-auth__radio" type="radio" checked="checked"/>Да
+              <input class="form-auth__radio" type="radio"/>Нет
+            </div>
+            <ul class="main-menu--welcome">
+              <li class="main-menu__item main-menu__item--auth"><a class="main-menu__link--welcome" href="index.html">На главную</a></li>
+              <li class="main-menu__item main-menu__item--auth"><a class="main-menu__link--welcome" href="auth.html">Войти</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer class="site-footer site-footer--welcome">
+    <div class="site-footer__underfooter site-footer__underfooter--welcome">
+      <h1 class="site-footer__underfootermotto">© Даниил Верещагин | с любовью LoftSchool | 2017</h1>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/app.js"></script>

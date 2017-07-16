@@ -1,0 +1,51 @@
+.admin-header {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 368px;
+
+    @include atTabletsPortrait {
+        margin-bottom: 330px;
+    }
+    @include atTabletsLandscape {
+        margin-bottom: 65px;
+    }
+
+    &__title {
+        color: white;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        padding: 40px 30px;
+        font-size: 1.5rem;
+
+        @include atTabletsLandscape {
+            font-size: 1rem;
+        }
+    }
+
+    &-up {
+        position: relative;
+        background: $maincolor;
+
+        &__link {
+            position: absolute;
+            top:50px;
+            left:50%;
+            // right: 0;
+            transform: translate(-50%,-50%);
+            color:white;
+            font-weight: 400;
+            font-family: 'Roboto',sans-serif;
+            cursor: pointer;
+            
+            @include atDesktop {
+               left: 85%;
+                right:30px;
+                transform: none;
+            }
+        }
+    }
+    &__down {
+        background: #f0efe9;
+    }
+
+}

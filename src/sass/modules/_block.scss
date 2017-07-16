@@ -1,0 +1,159 @@
+.block {
+    position: relative;
+    &__title {
+        color: #474b57;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.52;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        font-family: 'SansusWebsimmo', sans-serif;
+         z-index: 2;
+         padding: 40px 0;
+
+         @include atTabletsPortrait {
+            //  position: absolute;
+             margin:0 0;
+             font-size: 2rem;
+
+         }
+
+            &::after {
+
+            content: '';
+            height:3px;
+            display: block;
+            width: 85px;
+            background: #878784;
+            margin: 10px auto;
+           
+
+            @include atTabletsPortrait {
+                width: 85px;
+                margin: 0 auto;
+                background: #878784; 
+                padding: 0 0;
+            }
+
+            }
+
+            &--works {
+                color:white;
+                font-size: 2rem;
+                font-family: 'SansusWebissimo',sans-serif;
+                position: absolute;
+                top:-50px;
+                left:50%;
+                transform: translate(-50%,-50%);
+                margin: 0 0;
+                width: 100%;
+            }
+            &--weight {
+                font-family: 'SansusWebissimo',sans-serif;
+                color: #474b57;;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center; 
+                padding: 40px 10px;
+                display: inline-block;
+
+                @include atTabletsPortrait {
+                    margin: 0 auto;
+                }
+            }
+              &--big{
+                font-family: 'SansusWebissimo',sans-serif;
+                color: white;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center; 
+                padding: 40px 10px;
+                display: inline-block;
+
+                @include atTabletsPortrait {
+                    margin: 0 auto;
+                }
+            
+            &--about {
+                color: #474b57;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.52;
+                text-transform: uppercase;
+                text-align: center;
+                position: relative;
+                font-family: 'SansusWebsimmo', sans-serif;
+                z-index: 2;
+                padding: 40px 0;
+            }
+
+
+        }
+        &__title--pd50 {
+
+            text-align: center;
+            color:#474b57;
+            font-weight: 300;
+            font-size: 1.5rem;
+
+            @include atTabletsPortrait {
+                
+            }
+        }
+
+        &--about {
+            position: absolute;
+            top: 0;
+            text-align: center;
+        }
+        &--weight {
+            font-weight: bolder;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #474b57;
+            display: inline-block;
+        }
+        &--right {
+            padding-bottom: 50px;
+            // padding-left: 150px;
+            text-align: center;
+        }
+        &--works {
+            top: -5%;
+            left:50%;
+            transform: translate(-50%,-50%);
+           z-index: 2;
+            color:white;
+        }
+        &__suptitle {
+            color: #474b57;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 50px 0;
+            font-family: 'SansusWebsimmo', sans-serif;
+
+        
+            &::after {
+
+            content: '';
+            height:3px;
+            display: block;
+            width: 85px;
+            background: #878784;
+            margin: 10px auto;
+           
+
+            @include atTabletsPortrait {
+                width: 85px;
+                margin: 0 auto;
+                background: #878784; 
+            }
+
+            }
+        }
+    }
+}

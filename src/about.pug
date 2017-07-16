@@ -1,0 +1,69 @@
+include ./includes/_header.pug
+header.section.site-header.site-header--about
+        include ./includes/_socials.pug
+        include ./includes/_menu.pug
+
+        .user.user--about
+            .user__icon
+                    img.user__avatar(src="./img/avatar.jpg")
+            h2.user__title Даниил Верещагин
+            p.user__suptitle Личный сайт веб разработчика
+        
+        include ./includes/_arrow.pug
+
+section.section.about
+        .triangle.triangle--beige.triangle-left
+                svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
+                    polygon(points="0,0 0,150 1000,150")
+        .about-left
+            .block__title.block__title--weight Обо мне
+            .user-description 
+                .user-description-content
+                    img(src="./img/avatar.jpg").user-description__avatar
+                .user-description__title
+                    .block__title.block__title--pd50.block__title--line Кто я  
+                .user-description__text 
+                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+
+
+        .triangle.triangle--beige.triangle-right
+                svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none" )
+                    polygon(points="1000,0 1000,150 0,150")
+
+        .about-right
+            .about-right__wrapper 
+                .about-right__title
+                    h2.block__title.block__title--right.block__title--line.block__title--line-use  Чем я могу быть <br> вам полезен
+            
+                .about-right__description
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать&nbspне сложные задачи Backend. Но давайте по порядку.
+                .about-right-content 
+                    ul.skills
+                        each item in [ "Frontend", "Backend ", "Workflow"]
+                            li.skills__item
+                                .skills-row
+                                    .skills-row__title #{item}
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skill
+                                            svg.skill__circle
+                                                use(xlink:href="./img/sprite.svg#circle")
+                                            .skill__title
+
+section.section.map
+    #google-map.google-map
+    include ./includes/_footer.pug
+    include ./includes/_scripts.pug
+    include ./includes/_map.pug
+    
+
+
+                
+                    
+                        
+                                    
+
+                
+                
+
+            

@@ -1,0 +1,77 @@
+.contacts {
+
+    background: rgba(#fbfbfb,0.8);
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
+
+    @include atTabletsPortrait {
+
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 285px;
+        display: none;
+        
+    }
+
+    &__title {
+        padding-top:25px;
+        color: #474b57;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Roboto',sans-serif;
+        text-transform: uppercase;
+    }
+    img {
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+
+    
+
+    &__list {
+
+        font-family: 'Roboto',sans-serif;
+        color:red;
+        list-style-image: url('./img/vk.svg');
+        display: block;
+     
+
+        &--footer {
+            color:#d7d7d8;
+            display: block;
+        }
+    }
+    &__item {
+        color:#686e7b;
+        display: inline-block;
+        padding: 25px 20px;
+        position: relative;
+        vertical-align: top;
+        list-style-type: none;  
+        margin: 0;
+
+        &::before {
+            content:''; 
+            display:inline-block; 
+            height:1em; 
+            width:1em; 
+            background-image:url('./img/vk.svg'); 
+            background-size:contain; 
+            background-repeat:no-repeat; 
+            padding-left: 2em; 
+        }
+    
+
+
+        &--block {
+            display: block;
+            color:white;
+        }
+    }
+}

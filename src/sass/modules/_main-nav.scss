@@ -1,0 +1,87 @@
+.main-nav {
+    position: relative;
+
+ &__social {
+
+     padding-left:30px;
+     padding-top:30px;
+    
+    &--vk {
+
+        padding-left:10px;
+    }
+    
+    &--github {
+
+         padding-left:10px;
+    }
+
+    &--in {
+
+   padding-left:10px;
+
+    }
+    img {
+        display: inline-block;
+        padding-left:25px;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+ }
+    &__aboutme {
+
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+
+
+
+    &__title {
+
+        padding-top:40px;
+        padding-bottom: 20px;
+        color:$white;
+        font-family: 'Roboto Regular'sans-serif;
+        font-weight: bold;
+    
+    }
+    &__subtitle {
+        color:$white;
+      
+    }
+
+    }
+    &__bg {
+        width: 100%;
+        opacity: 0.8;
+        z-index: 1;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    } 
+    &__star {
+        z-index: 0;
+        position: absolute;
+        left:45%;
+        top:79%;
+
+    }
+
+    &__mainTitle {
+
+        color:$white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        z-index: 2; 
+        // display: inline-block;
+        // text-align: center;
+        position: absolute;
+        top:85%;
+        left:42%;
+        
+    }
+ 
+
+ 
+
+}

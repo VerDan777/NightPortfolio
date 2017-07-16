@@ -1,0 +1,35 @@
+.admin-table {
+
+    padding-bottom: 50px;
+    height: 160px;
+
+    &__container {
+        display: inline-block;
+    }
+    &__item {
+
+    }
+    &__title {
+        color:#474b57;
+
+    }
+      &__titleTheme {
+        color:#474b57;
+
+    }
+    &__input {
+  
+    }
+    input {
+      width: 60px;
+        border-radius: 30px;
+        margin-left: 50px;
+        outline: none;
+        border:none; 
+        color:#474b57;
+        text-align: center;
+        &:focus {
+            border:1px solid $maincolor;
+        } 
+    }
+}

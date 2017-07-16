@@ -1,0 +1,127 @@
+.main-menu {
+    // position: relative;
+    // font-size:0;
+       // positioning
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    // box model
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+    background-color: rgba(blue, 0.95);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+
+    &--shown {
+        // visual
+        opacity: 1;
+        visibility: visible;
+        z-index: 3;
+        background: rgba(#183568,0.95);
+
+    } 
+    
+    &__menu {
+        position: absolute;
+        top:30px;
+        right:30px;
+
+        &--welcome {
+            position: absolute;
+            bottom: 0;
+            // top:100%;
+            text-align: center;
+            right:0;
+            display: inline-block;  
+            margin:20px 0;
+            width: 100%;
+
+        cursor: pointer;
+        }
+    }
+    &__link {
+
+       &--welcome {
+       text-decoration: none;
+        text-align: center;
+        color:white;
+       }
+
+       &--header {
+           text-align: center;
+           color:white;
+           text-decoration: none;
+       }
+    }
+        &__item {
+
+        display: inline-block;
+        margin-left:-4px; 
+        padding:5px 6px;
+
+        @include atTabletsPortrait {
+        
+        padding-right: 20px;
+        padding-bottom: 30px;
+
+        }
+        &--header {
+            display: block;
+            padding:20px 0 ;
+            text-align: center;
+            font-family: 'SansusWebissimo',sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-transform: uppercase;
+
+
+            &:hover {
+
+                &::after {
+                    content:'';
+                    display: block;
+                    margin:10px 0;
+                    height: 1px;
+                    background: white;
+                    width:90px;
+                    margin:  0 auto;
+                }
+            }
+        }
+
+        &--welcome {
+
+            background: #0548bd;
+            border-right:1px solid white; 
+            padding:20px 18px;
+
+            &:hover,focus,active {
+                background: #083c96;
+
+            }
+        }
+        &--auth {
+            background: #0548bd;
+            border-right:1px solid white; 
+            padding:20px 42px;
+            font-family: 'Roboto',sans-serif;
+            
+              &:hover,focus,active {
+                background: #083c96;
+
+            }
+
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color:white;
+        font-weight: 100;
+        font-family: 'Roboto',sans-serif;
+    }
+}

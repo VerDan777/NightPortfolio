@@ -1,0 +1,57 @@
+.site-header {
+    position: relative;
+    background-image:url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 658px;   
+    &--blog {
+        
+    height: 500px;
+    background-image: url('../img/welcome1.png'); 
+
+
+    }
+    &--welcome {
+        background: url('../img/welcome1.png') bottom left repeat-x; 
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
+        width: 100%;
+        // // position: fixed;
+        // left: 0;
+        // width: 1920px;
+        // animation: bg 120s linear infinite;
+
+    }
+    @keyframes bg {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(1440px);
+        }
+    }
+    &--about {
+     background-image: url('../img/welcome1.png'); 
+       height: 100%;
+       
+    }
+    &__socials {
+        position: absolute;
+        top:30px;
+        left: 0px;
+
+        &__item {
+        padding:0 30px;
+
+        }
+    }
+
+    &__menu {
+
+        position: absolute;
+        right:30px;
+        top:30px;
+    }
+}

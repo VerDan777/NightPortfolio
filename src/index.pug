@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/styles.css")
+    title Document
+body
+    .spinner: img.spinner__img(src="./img/spinner.svg")
+    header.section--welcome.site-header--welcome
+         a(href="auth.html").button.button--auth Авторизоваться
+         .flip-container(ontouchstart="this.classList.toggle('click');")
+             .flipper
+                    .front
+                        .user.user--welcome
+                            .user-icon
+                                img.user__avatar(src="./img/avatar.jpg")
+                            h2.user__title Даниил Верещагин
+                            p.user__suptitle Личный сайт веб разработчика
+                            ul.socials
+                                li.socials__item: a(href="https://vk.com/id323298615" target='_blank').socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                                li.socials__item: a(href="https://github.com/VerDan777" target='_blank').socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                                li.socials__item: a(href="#" target='_blank').socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
+                                
+                            ul.main-menu--welcome
+                                - var menuitems = ['Мои работы', 'Обо мне', 'Блог'];
+                                - var menulinks = ['works.html','about.html','blog.html'];
+                                - for (var i=0; i<3;i++)
+                                    li.main-menu__item.main-menu__item--welcome: a.main-menu__link--welcome(href=menulinks[i])=menuitems[i]
+                    .back
+                        form.form-auth
+                            .form-application__title Авторизуйся
+                            .form-auth__group
+                                img(src="#").form-auth__img
+                                input.form-auth__input(type="text" placeholder="Логин")
+                            .form-auth__group
+                                img(src="#").form-auth__img
+                                input.form-auth__input(type="text" placeholder="Логин")
+                            input(type='checkbox', name='hidden', value=0, checked='').form-auth__checkbox
+                            | Я человек
+                            p.form-auth__text Вы точно не робот?
+                            .form-auth__radio-group
+                                input(type="radio" checked).form-auth__radio 
+                                | Да
+                                input(type="radio").form-auth__radio 
+                                | Нет
+                            ul.main-menu--welcome
+                                - var menuitems = ['На главную', 'Войти'];
+                                - var menulinks = ['index.html','auth.html'];
+                                - for (var i=0; i<2;i++)
+                                    li.main-menu__item.main-menu__item--auth: a.main-menu__link--welcome(href=menulinks[i])=menuitems[i]
+
+                                
+    
+                            
+    footer.site-footer.site-footer--welcome
+         .site-footer__underfooter.site-footer__underfooter--welcome
+            h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
+script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+script(src="./js/app.js")
