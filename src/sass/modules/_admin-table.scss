@@ -21,13 +21,15 @@
   
     }
     input {
-      width: 60px;
+
+        width: 60px;
         border-radius: 30px;
         margin-left: 50px;
         outline: none;
-        border:none; 
+        border: none; 
         color:#474b57;
         text-align: center;
+
         &:focus {
             border:1px solid $maincolor;
         } 

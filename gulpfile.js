@@ -5,8 +5,8 @@ global.$ = {
     config: require('./gulp/config'),
 
     path: {
-        task:require('./gulp/path/tasks.js'),
-        app: require('./gulp/path/app.js')
+        task:require('./gulp/path/tasks.js')
+        // app: require('./gulp/path/app.js')
     },
     gulp:require('gulp'),
     del:require('del'),
@@ -23,7 +23,7 @@ global.$ = {
 $.gulp.task('default',$.gulp.series(
     'clean',
     $.gulp.parallel(
-        'sass',ш
+        'sass',
         'pug',
         'js',
         'copyImg',

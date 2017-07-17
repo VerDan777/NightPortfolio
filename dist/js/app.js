@@ -78,28 +78,31 @@ var _Spinner = __webpack_require__(2);
 
 var _Spinner2 = _interopRequireDefault(_Spinner);
 
-var _Sidebar = __webpack_require__(3);
+var _Validation = __webpack_require__(3);
+
+var _Validation2 = _interopRequireDefault(_Validation);
+
+var _Sidebar = __webpack_require__(4);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-var _Map = __webpack_require__(4);
+var _Map = __webpack_require__(5);
 
 var _Map2 = _interopRequireDefault(_Map);
 
-var _tabs = __webpack_require__(6);
+var _tabs = __webpack_require__(7);
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var tabs = new _tabs2.default();
-// import Validation from './modules/Validation.js';
-
 var mobilemenu = new _MobileMenu2.default();
 var spinner = new _Spinner2.default();
-// const validation = new Validation();
+var validation = new _Validation2.default();
 var sidebar = new _Sidebar2.default();
 var map = new _Map2.default();
+var flip = new Flip();
 
 /***/ }),
 /* 1 */
@@ -195,6 +198,77 @@ exports.default = Spinner;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Validation = function () {
+    function Validation() {
+        _classCallCheck(this, Validation);
+
+        this.events();
+        // this.ValidateContact();
+    }
+
+    _createClass(Validation, [{
+        key: 'events',
+        value: function events() {
+            $('#button').click(function () {
+                var valid = true;
+                $(".form-application__input").css('background-color', '');
+                $(".info").html('');
+                if (!$("#name").val()) {
+                    $("#name-info").html("(required)").css('color', 'red');
+                    $("#name").css('background-color', '#FFFFDF');
+                    valid = false;
+                }
+                if (!$("#email").val()) {
+                    $("#email-info").html("(required)").css('color', 'red');
+                    $("#email").css('background-color', '#FFFFDF');
+                    valid = false;
+                }
+                if (!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                    $("#email-info").html("(invalid)").css('color', 'red');
+                    $("#email").css('background-color', '#FFFFDF');
+                    valid = false;
+                }
+                if (!$("#message").val()) {
+                    $("#message-info").html("(required)").css('color', 'red');
+                    $("#message").css('background-color', '#FFFFDF');
+                    valid = false;
+                }
+                return valid;
+                if (valid) {
+                    $.ajax()({
+                        url: 'http://localhost:3000/mail.php',
+                        data: 'name=' + $('#name').val() + '&email=' + $('#email').val() + '&message=' + $('#message').val(),
+                        type: "POST",
+                        success: function success(data) {
+                            $("#mail-status").html(data);
+                        },
+                        error: function error() {}
+                    });
+                }
+            });
+        }
+    }]);
+
+    return Validation;
+}();
+
+exports.default = Validation;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -237,7 +311,7 @@ var Sidebar = function () {
 exports.default = Sidebar;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -253,7 +327,7 @@ var Map = function Map() {
   _classCallCheck(this, Map);
 
   window.initMap = function () {
-    var stylemap = new google.maps.StyledMapType(__webpack_require__(5));
+    var stylemap = new google.maps.StyledMapType(__webpack_require__(6));
     var map = new google.maps.Map(document.getElementById("google-map"), {
       center: { lat: 54.710426, lng: 20.452214 },
       zoom: 15,
@@ -288,7 +362,7 @@ var Map = function Map() {
 exports.default = Map;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -349,7 +423,7 @@ module.exports = [{
 }];
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

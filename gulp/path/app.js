@@ -1,5 +1,5 @@
-'use strict'
+// 'use strict'
 
-module.exports = [
-    './src/js/app.js'
-]
+// module.exports = [
+//     './src/js/app.js'
+// ]

@@ -4,6 +4,10 @@
     background-size: cover;
     background-repeat: repeat-x ;
     width: 100%;
+
+    background-repeat: no-repeat;
+    width: 120%;
+
     height: 658px;   
     &--blog {
         
@@ -16,6 +20,10 @@
         background: url('../img/welcome1.png') bottom left repeat-x; 
         height: 100vh;
         position: relative;
+
+        background-repeat: no-repeat;
+        width: 100%;
+
         // // position: fixed;
         // left: 0;
         // width: 1920px;
